@@ -20,7 +20,9 @@ namespace BubbleShort
         /// </summary>
         private int n;
 
-        // fungsi / method untuk menerima masukan
+        /// <summary>
+        /// fungsi method ini untuk menerima angka yang dimasukkan
+        /// </summary>
         public void read()
         {
             //menerima angka untuk menentukan banyaknya data yang disimpan pada array 
