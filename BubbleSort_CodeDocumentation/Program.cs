@@ -12,9 +12,10 @@ namespace BubbleShort
     class Program
     {
         // Deklrasi array int dengan ukuran 20
+        /// <param name="a">tempat untuk memasukkan array sesuai angka yang diinginkan</param>
         private int[] a = new int[20];
 
-        // Deklarasi variabel int untuk menyimpan banyaknya data yang disimpan pada array
+       
         private int n;
 
         // fungsi / method untuk menerima masukan
