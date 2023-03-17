@@ -25,7 +25,7 @@ namespace BubbleShort
         /// </summary>
         public void read()
         {
-            //menerima angka untuk menentukan banyaknya data yang disimpan pada array 
+            ///menerima angka untuk menentukan banyaknya data yang disimpan pada array 
             while (true)
             {
                 Console.Write("masukkan banyaknya elemen pada array: ");
@@ -41,7 +41,7 @@ namespace BubbleShort
             Console.WriteLine(" Masukkan elemen array ");
             Console.WriteLine("-----------------------");
 
-            // Pengguna memasukkan elemen pada array
+            /// Pengguna memasukkan elemen pada array
             for (int i = 0; i < n; i++)
             {
                 Console.Write("<" + (i + 1) + ">");
@@ -50,9 +50,10 @@ namespace BubbleShort
             }
 
         }
+
+        /// Fungsi ini akan Menampilkan array yang telah tersusun
         public void display()
-        {
-            // Menampilkan array yang tersusun
+        {        
             Console.WriteLine("");
             Console.WriteLine("-----------------------------------");
             Console.WriteLine(" Element array yang telah tersusun ");
@@ -65,14 +66,14 @@ namespace BubbleShort
         }
         public void BubbleSortArray()
         {
-            for (int i = 1; i < n; i++) // for n - 1 passes
+            for (int i = 1; i < n; i++)
             {
-                //pada pass i, bandingkan n - 1 elemen pertama dengan elemen selanjutnya
+                ///pada pass i, dibandingkan n - 1 elemen pertama dengan elemen selanjutnya
                 for (int j = 0; j < n; j++)
                 {
-                    if (a[j] > a[j + 1]) // jika elmen tidak dalam urutan yang benar
+                    if (a[j] > a[j + 1]) /// jika elmen tidak dalam urutan yang benar
                     {
-                        // tukar elemen
+                        /// tukar elemen
                         int temp;
                         temp = a[j];
                         a[j] = a[j + 1];
@@ -83,19 +84,19 @@ namespace BubbleShort
         }
         static void Main(string[] args)
         {
-            // creating the object of the BubbleSort class
+            ///membuat objek dari kelas BubbleSort
             Program mylist = new Program();
 
-            //pemanggilan fungsi untuk menerima elemen array
+            ///tujuannya untuk pemanggilan fungsi untuk menerima elemen array
             mylist.read();
 
-            //pemanggilan fungsi untuk mengurutkan array 
+            ///pemanggilan fungsi untuk mengurutkan array 
             mylist.BubbleSortArray();
 
-            //pemanggilan fungsi untuk menampilkan array yang tersusun
+            ///pemanggilan fungsi untuk menampilkan array yang tersusun
             mylist.display();
 
-            //exit
+            ///keluar
             Console.WriteLine("\n\n Tekan tombol apa saja untuk keluar.");
             Console.Read();
         }
