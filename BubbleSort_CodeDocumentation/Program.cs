@@ -15,7 +15,9 @@ namespace BubbleShort
         /// <param name="a">tempat untuk memasukkan array sesuai angka yang diinginkan</param>
         private int[] a = new int[20];
 
-       
+        /// <summary>
+        /// Deklarasi variabel int untuk menyimpan banyaknya data yang disimpan pada array
+        /// </summary>
         private int n;
 
         // fungsi / method untuk menerima masukan
